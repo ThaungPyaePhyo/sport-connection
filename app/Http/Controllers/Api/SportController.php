@@ -12,6 +12,7 @@ class SportController extends Controller
     public function __construct(protected SportService $service)
     {   
     }
+    
     public function index()
     {
         $index = $this->service->getAll();
